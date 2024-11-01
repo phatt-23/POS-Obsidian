@@ -21,11 +21,11 @@ dále budou na písemce otázky z následujících témat:
 
 ### Tewys moudra
 my se ho byli dneska znova ptat co tam bude/nebude rikal hlavne ty:
-- [*] prenosova media, 
-- [*] kodovani, 
-- [ ] deterministicke / nedeterministicke, 
+- [x] prenosova media, 
+- [x] kodovani, 
+- [x] deterministicke / nedeterministicke, 
 - [ ] ip addressing jak rika tady kolega, 
-- [*] topologie asi nejake zaklady, 
+- [x] topologie asi nejake zaklady, 
 - [ ] ten ethernet neco malo 
 	- u tech ethernetu treba vedet jake kodovani tam je, jako na to kodovani docela lpěl
 - [ ] potom neco malo o tech kablem ze jaky pouzijes pro propojeni switche a PC treba
