@@ -35,13 +35,17 @@
 	    (calculated) - ACR (Attenuation / Crosstalk Ratio)
 	- *note: the frequency can be viewed as bits*
 
+- *note: 10GBase-T means 10 Gigabit Baseband (using digital signal) uTp cable* 
+- T - UTP cable, LX - fiber optic
+- broadband uses analog signal and baseband uses digital signal 
+
 | Name  | Bandwidth       | Application                               | Notes                                                                                                  |
 | ----- | --------------- | ----------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | Cat1  | 1 MHz           | non                                       | 1 Mbps, was never a standard                                                                           |
 | Cat2  | 4 MHz (4Mbps)   | IBM Token Ring                            | never standard                                                                                         |
 | Cat3  | 10 MHz (10Mbps) | 10Base-T                                  | telephone cables                                                                                       |
 | Cat4  | 20 MHz          | 16Mbps, Token Ring                        | never widely installed                                                                                 |
-| Cat5  | 100 MHz         | 100BaseTX, 100Base-T, (100Mbps Ethernet)  | FastEthernet                                                                                           |
+| Cat5  | 100 MHz         | 100Base-TX, 100Base-T, (100Mbps Ethernet) | FastEthernet                                                                                           |
 | Cat5e | 100MHz          | 1000Base-T, 2.5GBase-T (100Mbps Ethernet) | new parameters - used for Gigabit Ethernet                                                             |
 | Cat6  | 250 MHz         | 5GBase-T, 10GBase-T, (10Gbps Ethernet)    | limited cable length                                                                                   |
 | Cat6a | 500 MHz         | 5GBase-T, 10GBase-T, (10Gbps Ethernet)    |                                                                                                        |
@@ -49,16 +53,17 @@
 | Cat7a | 1 Ghz           |                                           | used for 40G / 100G Ethernet                                                                           |
 | Cat8  | 2 GHz           | 25GBase-T, 40GBase-T                      | 35m maximum length, used in data centers                                                               |
 - pairs used per Ethernet type:
-	- GigabitEthernet connection (1 Gbps) uses all 4 pairs
-	- FastEthernet connection (100 Mbps) uses only 2 pairs
+	- GigabitEthernet connection (1 Gbps, 1000Base-T and up) uses all 4 pairs
+	- FastEthernet connection (100 Mbps, 100Base-T) uses only 2 pairs
+	- 1000Base-T upwards require all four pairs while all below require only two
 #### Optical Fiber	
 [more info](https://www.thefoa.org/tech/ref/basic/fiber.html)
 - very high transfer rate (tens of Gbps, high bandwidth) and reachable distance
 - resilient against noise and eavesdroping (signal tapping)
 - works in: 
-	- singlemode - small core diameter, one beam of light
-	- multimode - larger core diameter, multiple beams
-- numerical aperture - range of angles over which the system can accept the light
+	- singlemode - small core diameter, one beam of light, light is guided along the whole cable
+	- multimode - larger core diameter, multiple beams, light is reflected against the inner bounderies of the core
+		- numerical aperture - range of angles over which the system can accept the light
 - limitations:
 	- only 2-level data encoding - light and dark
 	- the materials used (their Snell's index) in combinations with the light reflecting can cause dispersion -> causes deformation 

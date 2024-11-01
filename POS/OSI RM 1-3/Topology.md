@@ -43,7 +43,7 @@
 		- possibility of implementing redundant links
 		- mustn't include loops, must stay acyclic
 	- ring
-		- ring of p2p unidiractional links
+		- ring of p2p unidirectional links
 		- data circulates around the ring
 - WAN topologies:
 	- mesh

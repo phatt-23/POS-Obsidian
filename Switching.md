@@ -1,0 +1,30 @@
+- behave as bridges
+- switching is implemented by hardware 
+	- CAM table (Content Addressable Memory)
+	- low latency
+	- switching frames between multiple segments simulaneously
+- advatages:
+	- collision-free - higher transfer rate
+	- more deterministic behaviour - flow control, frame priorities
+	- better security - sends only to the destined NIC
+- easier management - troubleshooting of faulty segment, intruder detection
+- methods:
+	- store-and-forward
+		- whole frame is read into memory
+		- checksum is checked 
+		- only then is sent to the destination port (based on destination MAC address)
+	- cut-through
+		- frames are transmitred right after destination MAC address is read into memory
+	- fragment-free [more](https://learningnetwork.cisco.com/s/question/0D53i00000Kt0kjCAB/fragmentfree-processing)
+		- _"... ethernet is a probabilistic model of network. Fragment-free uses this statistical behavior to conclude that almost all frames that reaches 64 bytes of transmission will arrive without errors and the switch can begin its transmission to the destination port."_
+- parameters of LAN switches:	
+	- number of MAC addresses per port is exactly one
+	- total number of MAC addresses - number of rows in the CAM table
+	- methods of address-to-port assignment:
+		- dynamic - self-learning, flooding of frames (maybe ARP?) with unknown addresses
+		- static
+	- administation through Telnet, SNMP, WWW
+	- SPAN (Switched Port Analyzer) ports - used for traffic monitoring (Wireshark)
+	- addional functions:
+		- multicast processing, traffic filtering, *VLAN* support, ...
+	

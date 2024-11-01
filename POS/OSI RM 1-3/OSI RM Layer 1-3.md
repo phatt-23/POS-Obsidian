@@ -2,18 +2,9 @@
 První příklad je na VLSM (další ukázky nad rámec cvičení máte v LMS), 
 dále budou na písemce otázky z následujících témat: 
 
-1. vrstva OSI RM: 
-- [[Modulation and Encoding]] - modulace a kódování
-- [[Multiple Access Control and Protocols]] - metody přístupu k sdílenému médiu
-- [[Topology]] - topologie
-- [[Media]] - média
+1. vrstva OSI RM [[Layer 1 - Physical]] 
 
-2. vrstva OSI RM: 
-- [ ] přepínače, 
-- [ ] adresace, 
-- [ ] rámce Ethernetu, 
-- [ ] Spanning tree, 
-- [ ] VLAN, 
+2. vrstva OSI RM [[Layer 2 - Data Link]]
 
 3. vrstva OSI RM (IPv4, IPv6 a servisní protokoly). 
 
