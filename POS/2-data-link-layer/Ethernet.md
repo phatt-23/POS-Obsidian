@@ -69,3 +69,4 @@
 - based on 10Base-T - the same MAC protocol and frame format
 - physical layer (medium): T, TX, FX (LX and SX, operate in half-duplex, CSMA/CD)
 
+:)
