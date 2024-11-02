@@ -64,9 +64,13 @@
 	- can operate in full-duplex when switches are applied
 	- crossing of transmitter and receiver cable pairs
 
-## 100Base-()
-- *Fast-Ethernet*, 100Mbps
+## Fast Ethernet
+- 100 Mbps, 100Base, IEEE 802.3u
 - based on 10Base-T - the same MAC protocol and frame format
-- physical layer (medium): T, TX, FX (LX and SX, operate in half-duplex, CSMA/CD)
+- physical layer (medium): 
+	- 100Base-T
+	- 100Base-TX
+	- 100Base-FX (LX and SX, operate in half-duplex, CSMA/CD)
 
-:)
+## Gigabit Ethernet
+- 1 Gbps, 1000Base, IEEE 802.3z
