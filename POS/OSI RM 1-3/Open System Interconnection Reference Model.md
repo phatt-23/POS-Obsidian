@@ -224,6 +224,11 @@ _The presentation layer ensures the information that the application layer of on
 	- any application software with some networking enabled (command in terminal, GUI apps, ...)
 
 # Common Protocol Data Unit Names of Individual Layers
-- *messages* - Application, Presentation, Session Layers 
-- segments, datagra
+- common names:
+	- *messages* - Application, Presentation, Session Layers 
+	- *segments* (TCP), *datagrams* (UDP) - Transport Layer
+	- *packets* - Network Layer
+	- *frames* - Data Link Layer
+- this doesn't mean they can't be reffered to under different name
+
 
