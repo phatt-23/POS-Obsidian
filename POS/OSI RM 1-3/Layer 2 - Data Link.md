@@ -4,4 +4,4 @@
 - [[Switching]] - přepínače, 
 - [ ] adresace, 
 - [ ] rámce Ethernetu, 
-- [[Virtual LAN]] virtuální LAN, 
+- [[Virtual LAN]] - virtuální LAN, 
