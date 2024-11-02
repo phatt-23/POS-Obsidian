@@ -113,9 +113,14 @@
 - services to the upper layer:
 	- transmission of raw bit streams
 	- physical connection establishment and termination
-- examp	
-## Data Link Layer
+- examples: RS232, Ethernet 10Base-T, Ethernet 100Base-TX	
 
+## Data Link Layer
+- provides one or more logical connections for network layer entities on neighboring systems
+- services provided to upper layer:
+	- formatting and recognition of data frames
+	- addressing and identification of communication participants
+	- error detection
 
 
 
