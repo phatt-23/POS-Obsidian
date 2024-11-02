@@ -120,8 +120,13 @@
 - services provided to upper layer:
 	- formatting and recognition of data frames
 	- addressing and identification of communication participants
-	- error detection
-
+	- error detection and correction, error indication
+	- estalishment, maintanance and termination of logical connections
+	- flow control
+- is often split into two sub-layers:
+	- Logical Link Control (LLC) - unifies handling of various network technologies used with different MAC
+	- Media Access Control (MAC)
+- examples: 
 
 
 
