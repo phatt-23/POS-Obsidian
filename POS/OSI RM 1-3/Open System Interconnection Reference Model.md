@@ -126,10 +126,13 @@
 - is often split into two sub-layers:
 	- Logical Link Control (LLC) - unifies handling of various network technologies used with different MAC
 	- Media Access Control (MAC)
-- examples: 
-
-
-
+- examples: LLC 802.2, PPP (Peer-To-Peer Protocol), Frame Relay
+## Network Layer
+- allows: 
+	- overcoming differences between various network technologies (together with LLC in layer 2) be it connection-oriented or connectionless technology
+	- establish the universal service interface
+- provides means for data transfer between *non-neighboring* systems using intermediate systems
+	- functions and protocols f
 
 
 
