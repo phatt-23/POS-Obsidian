@@ -144,7 +144,15 @@
 
 ## Transport Layer
 - provides tranparent (reliable) data transfer between two entities in the transport layer (end users)
-- establishes addressing of transport-layer entitiues
+- establishes addressing of transport-layer entities in scope of a device with a single network address
+	- multiple transport session may exists between two systems in parallel
+	- allows multiplexing of multiple connections with a single virtual circuit
+- takes care of: 
+	- segmentation and reassembly
+	- error correction
+	- flow control
+- services provided:
+	- connection-oriented service
 
 
 
