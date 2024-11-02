@@ -161,7 +161,18 @@
 
 ## Session Layer
 - organizes and synchronizes the dialog between peer entities of presentation layer
+- services provided to the upper layer:
 - examples: 
+	- RPC (Remote Procedure Call)
+	- sharing of local disks, printers
+- difference with Transport Layer:
+	- transport layer sessions are established only for the duration of a particular data transfer
+	- session layer sessions are exist for the whole duration of the remote communication
+		- being logged-in in VSB SSO Network for a certain time before being signed out (Edison, LMS, Roundcube)
+
+## Presentation Layer
+- 
+
 
 
 
