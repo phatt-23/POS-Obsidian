@@ -12,7 +12,7 @@ dále budou na písemce otázky z následujících témat:
 
 ### Tewys moudra
 my se ho byli dneska znova ptat co tam bude/nebude rikal hlavne ty:
-- [x] prenosova media [[Media]], 
+- [x] prenosova media [[Transmission Media]], 
 - [x] kodovani [[Modulation and Encoding]], 
 - [x] deterministicke / nedeterministicke [[Multiple Access Control and Protocols]], 
 - [ ] ip addressing jak rika tady kolega, 
