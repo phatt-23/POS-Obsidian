@@ -1,0 +1,18 @@
+[glossary](https://nordvpn.com/cybersecurity/glossary/session-layer/)
+- organizes and synchronizes the dialog between peer entities of presentation layer
+- services provided to the upper layer:
+	- dialog control 
+		- simplex (one-way), 
+		- half-duplex (alternating) 
+		- or duplex communication (both way)
+	- flow control
+	- message transfer mode - normal, urgent or delayed
+	- checkpoints
+	- multiplexing and demultiplexing of an application session to one or multiple transport layer sessions 
+- examples: 
+	- RPC (Remote Procedure Call)
+	- sharing of local disks, printers
+- difference with Transport Layer:
+	- transport-layer sessions are established only for the duration of a particular data transfer
+	- session-layer sessions are exist for the whole duration of the remote communication
+		- being logged-in in VSB SSO Network for a certain time before being signed out (Edison, LMS, Roundcube)

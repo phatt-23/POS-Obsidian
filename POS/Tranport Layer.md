@@ -1,0 +1,15 @@
+- provides tranparent (reliable) data transfer between two entities in the transport layer (end users)
+- establishes addressing of transport-layer entities in scope of a device with a single network address
+	- multiple transport session may exists between two systems in parallel
+	- allows multiplexing of multiple connections with a single virtual circuit
+- takes care of: 
+	- segmentation and reassembly
+	- error correction
+	- flow control
+- services provided to the upper layer:
+	- connection-oriented services - TCP (Transport Control Protocol)
+	- connectionless services - UDP (User Datagram Protocol)
+- stands between the network infrastructure and end-systems that use it
+	- transport session is established directly between end-system transport entities
+	- intermediate systems don't participate
+- examples: TCP (Transport Control Protocol), UDP (User Datagram Protocol)

@@ -1,0 +1,13 @@
+- provides access to the communication subsystem to application programs
+- specifies format in which application programs have to provide/accept data
+- services provided:
+	- determination of identity and availability of the communication partner
+	- appointment of functions required from lower layers (dictates)
+		- specificatin of the necessary Quality of Services (QoS)
+		- determining resource availibility
+		- selection of diaglog mode
+		- specification of the responsibilities concerning error detection and correction and data consistency
+		- agreement of the message syntax
+- examples:
+	- network applications - e-mail, file transfer, ...
+	- any application software with some networking enabled (command in terminal, GUI apps, ...)
