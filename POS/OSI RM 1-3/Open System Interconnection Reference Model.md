@@ -189,6 +189,14 @@ _The presentation layer ensures the information that the application layer of on
 		- ASCII/EDDIC, TIFF/JPEG/...
 	- specifications binary data representations:
 		- XDR, CDR/GIOP, ASN.1+BER
+	- bit and byte ordering
+	- data encryption (can also be done by other layers)
+	- data compresion
+
+## Aplication Layer
+- provides access to the communication subsystem to application programs
+- specifies format in which application programs have to provide/accept data
+
 
 
 
