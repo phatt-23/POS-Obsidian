@@ -17,4 +17,4 @@
 - services to the upper layer:
 	- transmission of raw bit streams
 	- physical connection establishment and termination
-- examples: RS232, Ethernet 10Base-T, Ethernet 100Base-TX	
+- examples: RS232, Ethernet 10Base-T (cabling), Ethernet 100Base-TX (cabling)
