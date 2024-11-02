@@ -166,12 +166,19 @@
 	- RPC (Remote Procedure Call)
 	- sharing of local disks, printers
 - difference with Transport Layer:
-	- transport layer sessions are established only for the duration of a particular data transfer
-	- session layer sessions are exist for the whole duration of the remote communication
+	- transport-layer sessions are established only for the duration of a particular data transfer
+	- session-layer sessions are exist for the whole duration of the remote communication
 		- being logged-in in VSB SSO Network for a certain time before being signed out (Edison, LMS, Roundcube)
 
 ## Presentation Layer
-- 
+- unifies how informatoin passed between application-layer entites is represented
+	- binary representation of data types and characters
+- provides a mechanism for agreement of message syntax
+- deals only with the structure of passed messages
+	- semantics are only known to the application layer
+- functions of the layer:
+	- appointment of the message syntax (that why this layer is also called Syntax Layer)
+	- data translation
 
 
 
