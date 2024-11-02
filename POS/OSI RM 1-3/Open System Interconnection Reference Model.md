@@ -105,7 +105,7 @@
 			- error detection and correction
 			- flow control
 			- fragment and reassembly (of long messages)
-			- mapping of sessions to lower layers ()
+			- mapping of sessions to lower layers (1:1, 1:n, n:1)
 
 ## Physical Layer
 - takes care of physical bit stream transfer between neighboring systems
@@ -166,8 +166,17 @@
 - examples: TCP (Transport Control Protocol), UDP (User Datagram Protocol)
 
 ## Session Layer
+[glossary](https://nordvpn.com/cybersecurity/glossary/session-layer/)
 - organizes and synchronizes the dialog between peer entities of presentation layer
 - services provided to the upper layer:
+	- dialog control 
+		- simplex (one-way), 
+		- half-duplex (alternating) 
+		- or duplex communication (both way)
+	- flow control
+	- message transfer mode - normal, urgent or delayed
+	- checkpoints
+	- multiplexing and demultiplexing of an application session to one or multiple transport layer sessions 
 - examples: 
 	- RPC (Remote Procedure Call)
 	- sharing of local disks, printers
@@ -214,20 +223,6 @@ _The presentation layer ensures the information that the application layer of on
 	- network applications - e-mail, file transfer, ...
 	- any application software with some networking enabled (command in terminal, GUI apps, ...)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Common Protocol Data Unit Names of Individual Layers
+- Application, Presentation, Session Layers
 
