@@ -62,5 +62,10 @@
 	- station interconnected with hubs
 - 2 twisted pairs, RJ-45 connectors
 	- can operate in full-duplex when switches are applied
+	- crossing of transmitter and receiver cable pairs
 
+## 100Base-()
+- *Fast-Ethernet*, 100Mbps
+- based on 10Base-T - the same MAC protocol and frame format
+- physical layer (medium): T, TX, FX 
 
