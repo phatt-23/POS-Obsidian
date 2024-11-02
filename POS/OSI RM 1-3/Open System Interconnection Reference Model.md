@@ -224,5 +224,6 @@ _The presentation layer ensures the information that the application layer of on
 	- any application software with some networking enabled (command in terminal, GUI apps, ...)
 
 # Common Protocol Data Unit Names of Individual Layers
-- Application, Presentation, Session Layers
+- *messages* - Application, Presentation, Session Layers 
+- segments, datagra
 
