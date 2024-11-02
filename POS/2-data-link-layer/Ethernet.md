@@ -35,6 +35,32 @@
 	- then the highest-performance transmission mode they both support is chosen
 
 ## Ethernet Frame Format
-- type/length field
+- interpretation of the type/length field
+	- length - lower than 2000B
+	- type - upper layer protocol identification
+- interframe gap is 96 bits
+
+![[ethernet_frame_format.png.png]]
+
+# Ethernet Standards
+
+## 10Base5
+- oldest Ethernet - developed in 1973 by Bob Metcalfe at the Xerox Palo Alto Research Center
+- also called Thick Ethernet, DIX Ethernet, Ethernet II
+
+![[Pasted image 20241103003036.png]]
+
+- topology used is Bus, cabling is coaxial
+- Manchester encoding
+
+## 10Base2
+- also called Thin Ethernet, CheaperNet
+- topology used is still Bus and cabling is still coaxial
+
+## 10Base-T
+- topology used is Star (tree topology)
+	- station interconnected with hubs
+- 2 twisted pairs, RJ-45 connectors
+	- can operate in full-duplex when switches are applied
 
 
