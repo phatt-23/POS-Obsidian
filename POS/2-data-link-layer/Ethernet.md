@@ -46,9 +46,12 @@
 
 # Ethernet Standards
 
-- 10Base5, 10Base2 - coax, old
-- 10Base-T - twisted pair, old, only 10 Mbps
-- Fast Ethernet (100Base-T, 100Base-TX, 100Base-FX, 100Base-SX 100Base-LX) - CSMA/CD in half-duplex, Manchester enconding
+- 10Base5, 10Base2 
+	- coaxial, old
+- 10Base-T 
+	- twisted pair, old, only 10 Mbps
+- Fast Ethernet (100Base-T, 100Base-TX, 100Base-FX, 100Base-SX 100Base-LX) 
+	- CSMA/CD in half-duplex, Manchester enconding with 4B5B, 8B10B, ...
 
 ## 10Base5
 - oldest Ethernet - developed in 1973 by Bob Metcalfe at the Xerox Palo Alto Research Center
