@@ -8,7 +8,9 @@
 
 
 ## Ethernet Family Members Naming According to IEEE 802.3
+	 
      {Mbps|Gbps**G**} {Base|Broad} {segment length per 100 m|-medium}
+
 - medium:
 	- T, TX - twisted pair
 	- F, FX, LX, SX - fiber optic, L is single-mode, S is multimode
