@@ -153,6 +153,14 @@ $$FEDC:A98:7654:1230::7546:3210$$
 		6. destination options
 		
 ![[ipv6_headers.png.png|IPv6 header chaining]]
+- differences between IPv4 and IPv6:
+	- no fragmentation on routers
+		- path MTU (Maximum Transfer Unit) discovery procedure have to be applied
+		- only source may fragment packets
+			- usage of Fragmentation header
+	- optimized IP Option processing	
+	- support for jumbograms
+> 		In [packet-switched](https://en.wikipedia.org/wiki/Packet_switched "Packet switched") computer networks, a **jumbogram** ([portmanteau](https://en.wikipedia.org/wiki/Portmanteau "Portmanteau") of _[jumbo](https://en.wiktionary.org/wiki/jumbo "wikt:jumbo")_ and _[datagram](https://en.wikipedia.org/wiki/Datagram "Datagram")_) is an [internet-layer](https://en.wikipedia.org/wiki/Internet-layer "Internet-layer") packet exceeding the standard [maximum transmission unit](https://en.wikipedia.org/wiki/Maximum_transmission_unit "Maximum transmission unit") (MTU) of the underlying network technology. In contrast, large packets for _[link-layer](https://en.wikipedia.org/wiki/Link-layer "Link-layer")_ technologies are referred to as [jumbo frames](https://en.wikipedia.org/wiki/Jumbo_frame "Jumbo frame").
 
 ## IPv6 Subnetting
 - hierarchical addressing scheme
