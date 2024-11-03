@@ -16,7 +16,7 @@ aliases:
 			- sometimes you might encounter Service Access Point (SAP) addressing on the [[LLC Sub-Layer]] (8-bit long)
 			- [[Virtual LAN|Virtual LANs]] have their own VLAN ID, which could be considered an address
 
-# IP Addressing
+# IPv4 Addressing
 - 32-bit long addresses
 - every L3-aware ([[Network Layer]]) network interface has to have its own IP address
 	- these are network interfaces of stations (hosts) and routers
@@ -77,12 +77,21 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 - subnet mask:
 	- specifies how many bits of the subnetted address represent the network address + the subnet address
 	- binary one at the particular indicates that the bit in IP address belongs to network + subnet address
-- practical usage:
+- practical usage of subnetting:
 	- used for determing the maximum address prefix length to request from your ISP that will provide enough IP addresses to cover the required number of network segments, with sufficient addresses for the devices on each segment
-	- division of already given network prefix into 
+	- division of already given network prefix into a chosen number of segments
+	- used in WAN addressing plans
 
 
-
+# IPv6 Addressing
+- 128-bit long addresses (16 bytes)
+- written as hexadecimal numbers:
+$$FEDC:\textbf{0}A98:7654:1230:\textbf{0000}:\textbf{0000}:7546:3210$$
+	- leading zeros in each block may be omitted
+$$FEDC:A98:7654:1230::7546:3210$$
+	- no broadcasts (only multicasts)
+	- introduction of anycast
+- 
 
 
 
