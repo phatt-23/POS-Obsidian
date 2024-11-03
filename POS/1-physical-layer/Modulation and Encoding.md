@@ -1,7 +1,8 @@
 [prez1-1](https://lms.vsb.cz/pluginfile.php/2310316/course/section/2805839/basicPrinciples.pdf)
 ## BroadBand Transmission (long distance communication, modulation)
 - carrier signal (continuous periodic signal - sine wave) chosen, not carrying any meaning
-- we modify its parameters - amplitude (A), phase (phi), frequency (f)
+$$s(t) = A \sin(\omega t + \phi)$$
+- we modify its parameters - amplitude ($A$), phase ($\phi$), frequency ($\omega$)
 - PSK (Phase-Shift Keying) - phase modulation
 - QAM (Quadrature Amplitude Modulatin) 
 	- combines amplitude modulation and phase shifting modulation
