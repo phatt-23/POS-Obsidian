@@ -182,9 +182,17 @@ $$FEDC:A98:7654:1230::7546:3210$$
 		- using the NDP (Neighbor Discovery Protocol) and ICMPv6 router advertisements (Internet Control Message Protocol)
 	- EUI-64 is used - it uses a modified MAC address of the device in the host part of the IPv6 address, for example:
 		- MAC address of $$0A:CD:12:34:56:78$$
-		- is mapped like $$0(A \oplus 2)CD:12:FF:FE:34:56:78$$
-		- 
+		- is mapped like 
+$$ 
+\begin{matrix}
+	
+	0(A \oplus 2)CD:12:FF:FE:34:56:78 \\
+	(A_{16} \oplus 2_{16}) = 1010_2 \oplus 0010_2 = 1000_2 = A_{16} \\
+	0ACD:12FF:FE34:5678 \\
+	FE80::0ACD:12FF:FE34:5678
 
+\end{matrix}
+$$
 
 ## IPv6 Header
 - simplified in contrast to IPv4
