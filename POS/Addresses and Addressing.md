@@ -132,8 +132,8 @@ $$FEDC:\textbf{0}A98:7654:1230:\textbf{0000}:\textbf{0000}:7546:3210$$
 $$FEDC:A98:7654:1230::7546:3210$$
 	- no broadcasts (only multicasts)
 	- introduction of anycast
-	
-	**Anycast** is a network [addressing](https://en.wikipedia.org/wiki/Addressing "Addressing") and [routing](https://en.wikipedia.org/wiki/Routing "Routing") methodology in which a single [IP address](https://en.wikipedia.org/wiki/IP_address "IP address") is shared by devices (generally servers) in multiple locations. [Routers](https://en.wikipedia.org/wiki/Router_(computing) "Router (computing)") direct packets addressed to this destination to the location nearest the sender, using their normal [decision-making algorithms](https://en.wikipedia.org/wiki/Routing_algorithms "Routing algorithms"), typically the lowest number of [BGP](https://en.wikipedia.org/wiki/Border_gateway_protocol "Border gateway protocol") [network hops](https://en.wikipedia.org/wiki/Hop_(networking) "Hop (networking)"). Anycast routing is widely used by [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network "Content delivery network") such as web and [name servers](https://en.wikipedia.org/wiki/Name_server "Name server"), to bring their content closer to end users.
+
+> **Anycast** is a network [addressing](https://en.wikipedia.org/wiki/Addressing "Addressing") and [routing](https://en.wikipedia.org/wiki/Routing "Routing") methodology in which a single [IP address](https://en.wikipedia.org/wiki/IP_address "IP address") is shared by devices (generally servers) in multiple locations. [Routers](https://en.wikipedia.org/wiki/Router_(computing) "Router (computing)") direct packets addressed to this destination to the location nearest the sender, using their normal [decision-making algorithms](https://en.wikipedia.org/wiki/Routing_algorithms "Routing algorithms"), typically the lowest number of [BGP](https://en.wikipedia.org/wiki/Border_gateway_protocol "Border gateway protocol") [network hops](https://en.wikipedia.org/wiki/Hop_(networking) "Hop (networking)"). Anycast routing is widely used by [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network "Content delivery network") such as web and [name servers](https://en.wikipedia.org/wiki/Name_server "Name server"), to bring their content closer to end users.
 
 - global and link addresses
 - StateLess Address AutoConfiguration (SLAAC)
@@ -141,30 +141,43 @@ $$FEDC:A98:7654:1230::7546:3210$$
 	- station append their MAC addresses (with some adjustments)
 	- DHCPv6 (Dynamic Host Configuration Protocol) may be used for extra features
 
-- reserved IPv6 addresses:
-	- special address:
-		- $::1/128$ (loopback)
-		- $::/128$ (unspecified)
-	- discard-only address block:
-		- $100::/64$ (blackholes the traffic)
-	- test networks, documentation:
-		- $2001:2::/48$
-		- $2001:db8::/32$
-	- local addresses:
-		- $FE80::/10$ (linked-scoped unicast, i.e. link-local address)
-		- $FC00::/7$ (unique-local)
-
+## Reserved IPv6 Addresses
+- special address:
+	- $::1/128$ (loopback)
+	- $::/128$ (unspecified)
+- discard-only address block:
+	- $100::/64$ (blackholes the traffic)
+- test networks, documentation:
+	- $2001:2::/48$
+	- $2001:db8::/32$
+- local addresses:
+	- $FE80::/10$ (linked-scoped unicast, i.e. link-local address)
+	- $FC00::/7$ (unique-local)
 - multicast addresses:
 	- reserved block $FF00::/8$
 	- 4th hexadecimal digit (lowest 4 bits of the 2nd byte) indicates the scope of the multicast
-		1. interface local
-		2. link local
-		3. IPv4 local
-		4. administrative domain
-		5. site
-		8. organization
-		e. global
-	
+
+| IPv6 multicast address | scope                             |
+| ---------------------- | --------------------------------- |
+| FF01::/8               | interface local                   |
+| FF02::/8               | link local                        |
+| FF02::1/8              | all IPv6 devices on local segment |
+| FF02::2/8              | all IPv6-capable routers          |
+| FF02::5/8              | all OSPFv3 routers                |
+| FF02::9/8              | all RIPng (RIP for IPv6) routers  |
+| FF03::/8               | IPv4 local                        |
+| FF04::/8               | administrative domain             |
+| FF05::/8               | site                              |
+| FF08::/8               | organization                      |
+| FF0E::/8               | global                            |
+
+## Integrated Technologies of IPv6
+- protocols and technologies implemented right into the IPv6 protocol
+	- contrast to IPv4 where a lot of the technologies revolving it were develop independently 
+- IPSec (encryption, authentication)
+- Mobile IP
+- Mulicasts
+- SLAAC (Stateless Addess Auto-)
 
 ## IPv6 Header
 - simplified in contrast to IPv4
