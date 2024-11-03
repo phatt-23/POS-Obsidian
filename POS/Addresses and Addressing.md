@@ -177,7 +177,14 @@ $$FEDC:A98:7654:1230::7546:3210$$
 - IPSec (encryption, authentication)
 - Mobile IP
 - Mulicasts
-- SLAAC (Stateless Addess Auto-)
+- SLAAC (State-Less Addess Auto-Confuguration)
+	- IPv6 hosts can configure themselves automatically
+		- using the NDP (Neighbor Discovery Protocol) and ICMPv6 router advertisements (Internet Control Message Protocol)
+	- EUI-64 is used - it uses a modified MAC address of the device in the host part of the IPv6 address, for example:
+		- MAC address of $$0A:CD:12:34:56:78$$
+		- is mapped like $$0(A \oplus 2)CD:12:FF:FE:34:56:78$$
+		- 
+
 
 ## IPv6 Header
 - simplified in contrast to IPv4
@@ -212,7 +219,7 @@ $$FEDC:A98:7654:1230::7546:3210$$
 - optimized IP Option processing
 - support for jumbograms
 - no ARP - ICMPv6 is used instead
-	- neighbor discovery, router advertisements
+	- Neighbor Discovery Protocol, ICMPv6 router advertisements
 - support for anycast is required
 	- ::0 all zeros in host portion of address is the anycast address of the router on a given subnet
 		- *note: in IPv6 last address can be used unlike in IPv4 (broadcast)*
@@ -230,8 +237,6 @@ $$FEDC:A98:7654:1230::7546:3210$$
 	- protocol translation
 		- including DNS manipulation
 - IPv4 address range is treated as a subset of IPv6 range
-
-
 
 
 # Port Number Addressing
