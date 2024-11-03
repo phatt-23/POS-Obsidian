@@ -2,8 +2,8 @@
 2. vrstva OSI RM : 
 - [[Bridging and Spanning Tree]] - Spanning Tree,
 - [[Switching]] - přepínače, 
-- [ ] adresace, 
-- [ ] rámce Ethernetu, 
+- [[Addresses and Addressing]] - adresace, 
+- [[Ethernet]] - rámce Ethernetu, 
 - [[Virtual LAN]] - virtuální LAN, 
 
 - provides one or more logical connections for network layer entities on neighboring systems

@@ -11,5 +11,5 @@
 	- *unique system addressing* in scope of the whole internetwork
 - services provided to the upper layer:
 	- connection-oriented network service - X.25
-	- connectionless network service - IP, IPX
-- examples: IP (Internet Protocol), IPX, X.25
+	- connectionless network service - [[TCP-IP Protocol Suite|IP]], IPX
+- examples: [[TCP-IP Protocol Suite|IP]] (Internet Protocol), IPX, X.25

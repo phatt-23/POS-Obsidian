@@ -194,10 +194,14 @@ $$
 \end{matrix}
 $$
 - ICMPv6 (Internet Control Messages Protocol) messages:
-	- "Echo request" and "Echo reply"
+	- "Echo Request" and "Echo Reply"
 	- "Router solicitation" and "Router Advertisement"
 	- "Neighbor Solicitation" and "Neighbor Advertisement"
-	- 
+	- "Multicast Router Advertisement, Solicitation and Termination"
+	- "Multicast Listener Query, Report, Lister Done"
+	- "Destination Unreachable" and  "Time Exceeded"
+	- "Packet Too Big"
+	- "Parameter Problem", "Redirect"
 
 ## IPv6 Header
 - simplified in contrast to IPv4

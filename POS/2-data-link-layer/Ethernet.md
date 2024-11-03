@@ -4,7 +4,7 @@
 	- frame format changed - type/length field interpretation
 	- Ethernet today is a whole technology suite with a common frame format
 
-![[ethernet_used_technologies.png.png]]
+![[ethernet_used_technologies.png.png|Old Ethernet - DIX Ethernet, Ethernet II]]
 
 
 ## Ethernet Family Members Naming According to IEEE 802.3
