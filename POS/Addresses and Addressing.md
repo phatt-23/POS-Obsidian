@@ -96,12 +96,23 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 	- used for determing the maximum address prefix length to request from your ISP that will provide enough IP addresses to cover the required number of network segments, with sufficient addresses for the devices on each segment
 	- division of already given network prefix into a chosen number of segments
 	- used in WAN addressing plans - connects LANs together creating a mesh
+		- subnets are separated by Layer 3 devices - routers and stations, not switches and hubs
+		- blue circles can also be viewed as broadcast domains
+
+![[wan_addressing.png.png|WAN Addressing Plan]]
+- constraints of subnetting
+	- minimum number of bits of the node is 2
+		- network address (first) and broadcast address (last)
+
 
 ### Addressing Constant Subnet Mask
 - not used anymore, was replaced by VLSM (Variable Length Subnet Mask)
 - ![[constant_subnet_mask_1.png.png]]
 ![[constant_subnet_mask_2.png.png]]
 
+![[constant_subnet_mask_3.png.png]]
+
+![[constant_subnet_mask_4.png.png]]
 
 # IPv6 Addressing
 - 128-bit long addresses (16 bytes)
