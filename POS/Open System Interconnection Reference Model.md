@@ -45,11 +45,11 @@
 	- each entity can use the services provided by entities in the layer below
 	- entities communicate with entities of the same layer
 
-- service access point
+- service access point:
 	- defines rules of communication between adjacent layers (layers below and above)
 	- it's a software interface - it's provided operations are called *service primitives*:
 		- these are used by the service user and are provided by service provider
-		- abstrace operations - no implementation definition exists
+		- abstract operations - no implementation definition exists
 		- types:
 			- request - service user's request for a particular service from the lower layer
 			- confirm - confirmation of the service to service user in the upper layer

@@ -71,8 +71,17 @@
 			- this allows multiple protocols to coexist on the same physical network link by distinguishing data for each protocol through SAP identifiers
 	- optional error control and flow control
 
-### Implementations of LLC
-- unified frame format
+### Implementation of LLC Sub-Layer
+- unified LLC frame format is carried in different MAC frames
+	- LLC sub-layer adds its header to the payload of the MAC frame
+	- format and contents of the LLC header don't depend on the LAN technology belonging to the MAC sub-layer
+
+### Services Provided by LLC Sub-Layer
+- connectionless unackknowledged service
+	- most common one, no flow control and r
+- connection-oriented service - logical connection between remote entities (through SAPs)
+- connectionless acknowledge service
+
 
 
 
