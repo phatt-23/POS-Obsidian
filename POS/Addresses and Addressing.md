@@ -193,6 +193,11 @@ $$
 
 \end{matrix}
 $$
+- ICMPv6 (Internet Control Messages Protocol) messages:
+	- "Echo request" and "Echo reply"
+	- "Router solicitation" and "Router Advertisement"
+	- "Neighbor Solicitation" and "Neighbor Advertisement"
+	- 
 
 ## IPv6 Header
 - simplified in contrast to IPv4
