@@ -39,9 +39,16 @@
 # TCP/IP Supporting Protocols
 - also called IP service protocols
 - their purpose is to help the IP protocol do certain tasks it cannot do itself
-- examples: ARP
-## ARP - Address Resolution Protocol
+- examples: 
+	- ARP (Address Resolution Protocol), 
+	- RARP (Reverse Address Resolution Protocol), 
+	- ICMP (Internet Control Message Protocol), 
+	- IGMP (Internet Group Management Protocol)
 
+## ARP - Address Resolution Protocol
+- used for when we don't know to which interface we should send the IP packet so it will arrive to the destination
+- maps destination IP addresses to corresponding MAC addresses
+	- ARP Request with an IP address in question are broadcasted when a corresponding MAC address is needed (is not known)
 
 
 
