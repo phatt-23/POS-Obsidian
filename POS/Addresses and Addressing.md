@@ -30,6 +30,23 @@ aliases:
 				- only storing addresses of individual networks
 	- node/host address part
 
+## Classes of IP addreses
+- method for allocating addresses of the past, not being used anymore
+	- with no regard for the future, wasting shit ton of unique addresses (fixed size network and host address parts)
+
+![[classes_of_ip_addresses.png.png]]
+
+- address space subdivided into 5 classes (A,B,C,D,E)
+	- each beginnig with a certain sequence of bits
+		- A (0), B (10), C (110), D (1110), E (1111)
+	- having network prefix following after this sequence
+
+
+## Classless Addressing
+- network prefix of arbitrary length can be allocated
+	- has be accompanied by a *subnet mask* that specifies length of the network prefix
+	- standardized as Classless Inter-Domain Routing (CIDR)
+		- CIDR notation - slash behind an IP address (192.168.100.0/24)
 
 
 
