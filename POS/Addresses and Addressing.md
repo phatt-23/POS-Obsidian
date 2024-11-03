@@ -140,6 +140,12 @@ $$FEDC:A98:7654:1230::7546:3210$$
 	- routers adverise the local network address prefix
 	- station append their MAC addresses (with some adjustments)
 	- DHCPv6 (Dynamic Host Configuration Protocol) may be used for extra features
+- reserved IPv6 addresses:
+	- special address
+		- ::1/128 (loopback)
+		- ::/128 (unspecified)
+	
+
 ## IPv6 Header
 - simplified in contrast to IPv4
 ![[comp_of_ipv4_and_ipv4.png.png|Comparison between IPv4 and IPv6 headers]]
@@ -153,21 +159,6 @@ $$FEDC:A98:7654:1230::7546:3210$$
 		6. destination options
 		
 ![[ipv6_headers.png.png|IPv6 header chaining]]
-- differences between IPv4 and IPv6:
-	- no fragmentation on routers
-		- path MTU (Maximum Transfer Unit) discovery procedure have to be applied
-		- only source may fragment packets
-			- usage of Fragmentation header
-	- optimized IP Option processing	
-	- support for jumbograms
-	- no ARP - ICMPv6 is used instead
-		- neighbor discovery, router advertisements
-	- support for anycast is required
-		- ::0 all zeros in host portion of address is the anycast address of the router on a given subnet
-			- *note: in IPv6 last address can be used unlike in IPv4 (broadcast)*
-	- DNS extensions - AAAA and ipv6.arpa PTR record
-			
-> In [packet-switched](https://en.wikipedia.org/wiki/Packet_switched "Packet switched") computer networks, a **jumbogram** ([portmanteau](https://en.wikipedia.org/wiki/Portmanteau "Portmanteau") of _[jumbo](https://en.wiktionary.org/wiki/jumbo "wikt:jumbo")_ and _[datagram](https://en.wikipedia.org/wiki/Datagram "Datagram")_) is an [internet-layer](https://en.wikipedia.org/wiki/Internet-layer "Internet-layer") packet exceeding the standard [maximum transmission unit](https://en.wikipedia.org/wiki/Maximum_transmission_unit "Maximum transmission unit") (MTU) of the underlying network technology. In contrast, large packets for _[link-layer](https://en.wikipedia.org/wiki/Link-layer "Link-layer")_ technologies are referred to as [jumbo frames](https://en.wikipedia.org/wiki/Jumbo_frame "Jumbo frame").
 
 ## IPv6 Subnetting
 - hierarchical addressing scheme
@@ -178,6 +169,37 @@ $$FEDC:A98:7654:1230::7546:3210$$
 			- end segments typically have /64 subnet mask
 				- /65, /66, /67, ... masks are theoretically possible but SLAAC will not function
 				- sometimes single address /126, /127, /128 masks are used, although they are discouraged because of potential issues with routers
+
+## Differences between IPv4 and IPv6
+*note: this following list states what IPv6 has*
+- no fragmentation of IPv6 packets on routers:
+	- path MTU (Maximum Transfer Unit) discovery procedure have to be applied
+	- only source may fragment packets
+		- usage of Fragmentation header
+- optimized IP Option processing
+- support for jumbograms
+- no ARP - ICMPv6 is used instead
+	- neighbor discovery, router advertisements
+- support for anycast is required
+	- ::0 all zeros in host portion of address is the anycast address of the router on a given subnet
+		- *note: in IPv6 last address can be used unlike in IPv4 (broadcast)*
+- DNS extensions - AAAA and ipv6.arpa PTR record
+> A new resource record that is defined as an AAAA record has been specified by RFC 1886. This AAAA record maps a host name into an 128–bit IPv6 address. The PTR record is still used with IPv6 to map IP addresses into host names. The thirty two 4–bit nibbles of the 128–bit address are reversed for an IPv6 address. Each nibble is converted to its corresponding hexadecimal ASCII value. Then, ip6.int is appended. [source](https://docs.oracle.com/cd/E19683-01/817-0573/solimpconcepts-35/index.html)
+			
+> In [packet-switched](https://en.wikipedia.org/wiki/Packet_switched "Packet switched") computer networks, a **jumbogram** ([portmanteau](https://en.wikipedia.org/wiki/Portmanteau "Portmanteau") of _[jumbo](https://en.wiktionary.org/wiki/jumbo "wikt:jumbo")_ and _[datagram](https://en.wikipedia.org/wiki/Datagram "Datagram")_) is an [internet-layer](https://en.wikipedia.org/wiki/Internet-layer "Internet-layer") packet exceeding the standard [maximum transmission unit](https://en.wikipedia.org/wiki/Maximum_transmission_unit "Maximum transmission unit") (MTU) of the underlying network technology. In contrast, large packets for _[link-layer](https://en.wikipedia.org/wiki/Link-layer "Link-layer")_ technologies are referred to as [jumbo frames](https://en.wikipedia.org/wiki/Jumbo_frame "Jumbo frame"). [source](https://en.wikipedia.org/wiki/Jumbogram?useskin=vector)
+
+## IPv4 and IPv6 Coexistence and Interoperation
+- expected to co-exist together for many years, either by:
+	- static tunneling
+	- dynamic tunning - Teredo technology (don't search, you will see horid worms), etc.
+- Interoperability options:
+	- dual-stack hosts
+	- protocol translation
+		- including DNS manipulation
+- IPv4 address range is treated as a subset of IPv6 range
+
+
+
 
 # Port Number Addressing
 - addressing of services (processes) on end systems
