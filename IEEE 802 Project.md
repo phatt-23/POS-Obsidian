@@ -1,5 +1,0 @@
-- started in 1982 and is still ongoing
-- its efforts are to standardize the current state of LAN technologies
-	- resulted in standards that were accepted by ISO 
-		- under the name ISO 8802 standard (1987)
-	- standardizes the physical and link layer

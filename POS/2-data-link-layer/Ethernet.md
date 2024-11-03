@@ -50,7 +50,7 @@
 - oldest Ethernet - developed in 1973 by Bob Metcalfe at the Xerox Palo Alto Research Center
 - also called Thick Ethernet, DIX Ethernet, Ethernet II
 
-![[Pasted image 20241103003036.png]]
+![[dix_ethernet.png.png]]
 
 - topology used is Bus, cabling is coaxial
 - Manchester encoding
