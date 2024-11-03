@@ -42,6 +42,7 @@ aliases:
 		- nodes connected to a central hub (active or passive)
 		- resilient against failure of nodes
 		- failure of the hub is critical
+		- hub-and-spoke (tire on a bike)
 	- tree
 		- generalization of star, also called distributed star
 		- most widely used nowdays
@@ -55,7 +56,7 @@ aliases:
 	- mesh
 		- point-to-point links between routers
 		- alternate paths may exist
-		- full-mesh (complete graph) and hub-and-spoke (tire on a bike)
+		- full-mesh (complete graph) - expensive
 - Internet's topology
 	- is a mixture of networks with various topologies
 	- LANs with various topologies are interconnected via routers
