@@ -114,7 +114,15 @@ $$FEDC:A98:7654:1230::7546:3210$$
 - addressing of services (processes) on end systems
 - the [[Tranport Layer|transport-layer]] entities providing some services are identified by:
 	- the IP address of the machine they run on
-	- port number
+	- port number 
+		- is local to the particular machine
+		- 16-bit long (0 - 65535), separate for UDP and TCP protocols
+> While UDP and TCP share the same port number range (0–65535), each protocol maintains its own set of ports. This means that TCP port 80, for example, is different and independent from UDP port 80. A server can use the same port number for both TCP and UDP without conflict because they are managed independently within each protocol's stack.
+- well known services (0 - 1023)
+- other registered applications (1024 - 4096)
+- other ports are client ports often assigned by the OS to the application
+- *NOTE: both destination and source port are used to identify the flow*
+
 
 
 
