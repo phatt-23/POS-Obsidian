@@ -3,6 +3,9 @@
 - carrier signal (continuous periodic signal - sine wave) chosen, not carrying any meaning
 $$s(t) = A \sin(\omega t + \phi)$$
 - we modify its parameters - amplitude ($A$), phase ($\phi$), frequency ($\omega$)
+
+> instead of infinite possible values in traditional analog (continuous) signal (vinyl player, radio, walkie-talkie, film-tapes, analog cameras) we have only a finite set of values the signal can represent we can send (discrete)
+
 - PSK (Phase-Shift Keying) - phase modulation
 - QAM (Quadrature Amplitude Modulatin) 
 	- combines amplitude modulation and phase shifting modulation
