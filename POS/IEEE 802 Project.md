@@ -21,7 +21,7 @@
 - IEEE 802 divides the data link layer into:
 	- MAC (Media Access Control) sub-layer
 		- different for various network technologies
-	- LLC (Logical Link Control) sub-layer
+	- LLC (Logical Link Control) sub-layer (IEEE 802.2)
 		- unifies all of the various network technologies
 
 ![[data_link_layer_and_ieee.png.png]]
@@ -57,5 +57,21 @@
 - transmitted by octets to the medium starting with the leftmost octet
 - order of bits in transmitted octets differs based on different MAC technologies used:
 	- 802.3 Ethernet - LSB bit first
-	- 802.5 
+	- 802.5 Token Ring - MSB bit first
+
+## LLC Sub-Layer
+- IEEE 802.2
+- responsibilities of LLC:
+	- defines services provided to upper layers irrespective of the LAN technology
+		- provides a common software interface
+		- abstracts away diffrences between individual LANs of the 802 project
+	- allows addressing of entities (stations, routers) within the same network scope of the network node
+		- 
+	- optional error control and flow control
+
+
+
+
+
+
 
