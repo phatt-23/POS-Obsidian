@@ -50,6 +50,6 @@
 - maps destination IP addresses to corresponding MAC addresses
 	- ARP Request with an IP address in question are broadcasted when a corresponding MAC address is needed (is not known)
 		- the learnt mappings of IP addreses and MAC addresses are put into ARP caches (table, similar to CAM tables in switches and routing)
-
+- 
 
 
