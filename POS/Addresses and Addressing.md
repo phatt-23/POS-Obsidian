@@ -91,9 +91,20 @@ $$FEDC:\textbf{0}A98:7654:1230:\textbf{0000}:\textbf{0000}:7546:3210$$
 $$FEDC:A98:7654:1230::7546:3210$$
 	- no broadcasts (only multicasts)
 	- introduction of anycast
-- 
+	
+	**Anycast** is a network [addressing](https://en.wikipedia.org/wiki/Addressing "Addressing") and [routing](https://en.wikipedia.org/wiki/Routing "Routing") methodology in which a single [IP address](https://en.wikipedia.org/wiki/IP_address "IP address") is shared by devices (generally servers) in multiple locations. [Routers](https://en.wikipedia.org/wiki/Router_(computing) "Router (computing)") direct packets addressed to this destination to the location nearest the sender, using their normal [decision-making algorithms](https://en.wikipedia.org/wiki/Routing_algorithms "Routing algorithms"), typically the lowest number of [BGP](https://en.wikipedia.org/wiki/Border_gateway_protocol "Border gateway protocol") [network hops](https://en.wikipedia.org/wiki/Hop_(networking) "Hop (networking)"). Anycast routing is widely used by [content delivery networks](https://en.wikipedia.org/wiki/Content_delivery_network "Content delivery network") such as web and [name servers](https://en.wikipedia.org/wiki/Name_server "Name server"), to bring their content closer to end users.
 
+- global and link addresses
+- StateLess Address AutoConfiguration (SLAAC)
+	- routers adverise the local network address prefix
+	- station append their MAC addresses (with some adjustments)
+	- DHCPv6 (Dynamic Host Configuration Protocol) may be used for extra features
 
+## IPv6 Subnetting
+- hierarchical addressing scheme
+- you will be given a prefix which is typically a multiple of 4 bits (nibble)
+- typically /32 are allocated by RIRs (Regional Internet Registry) to organizations
+	- if the organization is LIR (Local Internet Registry) their client is allocated 
 
 
 
