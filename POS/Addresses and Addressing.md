@@ -104,7 +104,17 @@ $$FEDC:A98:7654:1230::7546:3210$$
 - hierarchical addressing scheme
 - you will be given a prefix which is typically a multiple of 4 bits (nibble)
 - typically /32 are allocated by RIRs (Regional Internet Registry) to organizations
-	- if the organization is LIR (Local Internet Registry) their client is allocated 
+	- if the organization is LIR (Local Internet Registry) 
+		- their client is allocated /48 prefix which LIR subnets
+			- end segments typically have /64 subnet mask
+				- /65, /66, /67, ... masks are theoretically possible but SLAAC will not function
+				- sometimes single address /126, /127, /128 masks are used, although they are discouraged because of potential issues with routers
+
+# Port Number Addressing
+- addressing of services (processes) on end systems
+- the [[Tranport Layer|transport-layer]] entities providing some services are identified by:
+	- the IP address of the machine they run on
+	- port number
 
 
 
