@@ -18,7 +18,7 @@
 - 802.1p - QoS (traffic prioritization)
 
 # Relationship with OSI-RM
-- IEEE 802 divides the data link layer into:
+- IEEE 802 divides the [[Data Link Layer]] into:
 	- [[MAC Sub-Layer]] (Media Access Control) 
 		- different for various network technologies
 	- [[LLC Sub-Layer]] (Logical Link Control, IEEE 802.2)

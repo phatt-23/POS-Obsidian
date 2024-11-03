@@ -14,6 +14,6 @@
 	- estalishment, maintanance and termination of logical connections
 	- flow control
 - is often split into two sub-layers:
-	- Logical Link Control (LLC) - unifies handling of various network technologies used with different MAC
-	- Media Access Control (MAC)
+	- [[LLC Sub-Layer|Logical Link Control]] (LLC) - unifies handling of various network technologies used with different MAC
+	- [[MAC Sub-Layer|Media Access Control]] (MAC)
 - examples: LLC 802.2, PPP (Peer-To-Peer Protocol), Frame Relay

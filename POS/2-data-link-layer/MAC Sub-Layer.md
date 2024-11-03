@@ -1,14 +1,14 @@
 - MAC sub-layer standards for current LAN types:
-	- 802.3 - CSMA/CD networks (Ethernet)
+	- 802.3 - [[Probabilistic MAC Protocols|CSMA/CD]] networks (Ethernet)
 	- 802.4 - Token Bus
 	- 802.5 - Token Ring
 	- 802.11 - Wireless LAN (Wi-Fi)
 	- 802.15 - Wireless PAN (Bluetooth)
 	- ...
 - responsibilities:
-	- MAC access methods
+	- [[Multiple Access Control and Protocols|MAC access methods]]
 	- frame format
-	- station addressing (MAC addresses)
+	- station addressing ([[Addresses and Addressing|MAC address]])
 	- error detection
 
 ### MAC Addresses
@@ -29,3 +29,5 @@
 - order of bits in transmitted octets differs based on different MAC technologies used:
 	- 802.3 Ethernet - LSB bit first
 	- 802.5 Token Ring - MSB bit first
+
+

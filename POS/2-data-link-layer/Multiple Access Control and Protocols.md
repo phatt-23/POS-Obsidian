@@ -1,7 +1,10 @@
-- the medium (or its sub-channel) could be sharedd by multiple stations
+- *note: these technologies can also viewed as to be part of the physical layer as well (the OSI-RM only gives a guide on how the technologies can be thought of, in which layer they generally belong to, not where they exactly belong to)*
+
+- the medium (or its sub-channel) could be shared by multiple stations
 	- only one can transmit at a time, otherwise traffic collides and data is corrupted
 	- all stations must agree which one is allowed to transmit
 - for this purpose multiple access control (aka MAC) protocols have been developed
+
 ### Classification of MAC Protocols
 - [[Deterministic MAC Protocols]] (contention-free, distributed algorithm)
 	- defines a sequence in that the stations may transmit
