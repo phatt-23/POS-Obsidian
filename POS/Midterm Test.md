@@ -6,7 +6,7 @@ dále budou na písemce otázky z následujících témat:
 
 2. vrstva OSI RM [[Data Link Layer]]
 
-3. vrstva OSI RM (IPv4, IPv6 a servisní protokoly) [[Network Layer]]. 
+3. vrstva OSI RM (IPv4, IPv6 a servisní protokoly ("support protocols" or "service protocols")) [[Network Layer]]. 
 
 - OSI RM - enkapsulace, PDU.
 
@@ -15,7 +15,7 @@ my se ho byli dneska znova ptat co tam bude/nebude rikal hlavne ty:
 - [x] prenosova media [[Transmission Media]], 
 - [x] kodovani [[Modulation and Encoding]], 
 - [x] deterministicke / nedeterministicke [[Multiple Access Control and Protocols]], 
-- [ ] ip addressing jak rika tady kolega, 
+- [ ] ip addressing jak rika tady kolega [[Addresses and Addressing|IP adressing]], 
 - [x] topologie asi nejake zaklady [[Topology]], 
 - [ ] ten ethernet neco malo [[Ethernet]]
 	- u tech ethernetu treba vedet jake kodovani tam je, jako na to kodovani docela lpěl
