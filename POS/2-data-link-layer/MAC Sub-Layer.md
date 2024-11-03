@@ -19,7 +19,7 @@
 		- lowest - unicast (0), group (1) addresses
 		- 2nd lowest - globally unique (0), locally assigned (1)
 	- global unique address:
-		- first 3 octets are manufacturer's ID assigned by ISO
+		- first 3 octets are the manufacturer's ID assigned by ISO
 		- last 3 octets assigned by the manufacturer
 - all bits set - broadcast - `FF:FF:FF:FF:FF:FF`
 - all bits unset - for testing empty frames
