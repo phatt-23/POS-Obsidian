@@ -39,11 +39,13 @@
 # TCP/IP Supporting Protocols
 - also called IP service protocols
 - their purpose is to help the IP protocol do certain tasks it cannot do itself
-- examples: 
+- examples for IPv4: 
 	- ARP (Address Resolution Protocol), 
 	- RARP (Reverse Address Resolution Protocol), 
 	- ICMP (Internet Control Message Protocol), 
 	- IGMP (Internet Group Management Protocol)
+- examples for IPv6: 
+	- 
 
 ## ARP - Address Resolution Protocol
 - used for when we don't know to which interface we should send the IP packet so it will arrive to the destination
@@ -57,7 +59,7 @@
 		- the reqester caches this MAC address (on Linux you can check this ARP table with `arp -a` command)
 - works between L2 and L3
 
-# ICMP - Internet Control Message Protocol
+## ICMP - Internet Control Message Protocol
 - control and information messages
 	- informs about non-standard events during packet transmission
 - carried in data part of the IP packet
@@ -67,5 +69,17 @@
 		- network, host, port, protocol unreachable
 	- "Time exceeded" 
 		- TTL (Time-To-Live) field reaches zero
-			- used by `traceroute` program
+			- used by the `traceroute` program
 		- reassembly timeout expired
+	- "Redirect"
+	- "Parameter problem"
+- newer messages (not supported by all devices):
+	- "Source quench"
+		- asks the source station to lower the speed of packet generation
+			- receiever's buffers are becoming full
+	- "Address mask request", "Address mask reply"
+	- "Router solicitation", "Router advertisement"
+	> The ICMP Router Solicitation message is sent from a computer host to any routers on the local area network to request that they advertise their presence on the network.
+
+
+

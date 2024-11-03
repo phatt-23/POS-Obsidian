@@ -117,13 +117,11 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 ### Addressing Constant Subnet Mask
 - not used anymore, was replaced by VLSM (Variable Length Subnet Mask)
 - here are some examples (extra shit):
-![[constant_subnet_mask_1.png.png]]
+![[constant_subnet_mask_1.png.png|hovno 1]]
+![[constant_subnet_mask_2.png.png|hovno 2]]
+![[constant_subnet_mask_3.png.png|hovno 3]]
+![[constant_subnet_mask_4.png.png|hovno 4]]
 
-![[constant_subnet_mask_2.png.png]]
-
-![[constant_subnet_mask_3.png.png]]
-
-![[constant_subnet_mask_4.png.png]]
 
 # IPv6 Addressing
 - 128-bit long addresses (16 bytes)
@@ -163,7 +161,7 @@ $$FEDC:A98:7654:1230::7546:3210$$
 - well known services (0 - 1023)
 - other registered applications (1024 - 4096)
 - other ports are client ports often assigned by the OS to the application
-- *NOTE: both destination and source port are used to identify the flow*
+- *NOTE: both destination and source port are used to identify the flow (both are required in the TCP and UDP headers)*
 
 
 
