@@ -2,9 +2,8 @@
 	- maximum theoretical time for a frame to travel a network 
 		- during which we can't transfer data
 		- time is wasted
-# ALOHA System
 
-- for ALOHA System protocols as number of packets increases the overall throughput plummits
+# ALOHA System
 - it is necessary to control the behaviour of this method
 	- by cleverly modifying its parameters
 		- packet transmission rate 
@@ -15,12 +14,14 @@
 			- exponentially lowers the transmission rate as failures grow
 - still in use in *wireless networks* and *communication over satellites*
 	- long propagation delay doesn't allow efficienct checking before transmission
+
 ### Pure Aloha
 - transmitter doesn't check, just starts
 - collision detection - packet acknowledgement failed to receive in timeout
 	- packet retransmitted after timeout
 	- random pauses to avoid global synchronization of multiple transmitters
 - max. channel capacity is 18.4%
+
 ### Slotted Aloha
 - trasmitter can only start in a particular golbally synchronized time instants (timeslots)
 - transmission will succeed if only one packet was transmitted in a timeslot
@@ -35,6 +36,7 @@
 	- stations can hear each other well
 	- low signal propagation delay
 - if assumptions are not met, then CSMA protocols performs worse than ALOHA
+
 ### 1-Persistent CSMA
 - channel checked before transmission
 - if busy then trasmissin is deffered until the previous finishes
@@ -42,6 +44,7 @@
 	- risk that multiple transmitters are waiting at the same time	
 - if collision is detected then the transmitter waits for a random time
 	- avoiding global synchronization
+
 ### Non-Persistent CSMA
 - if channel is busy, transmitter waits for random time before cheking again
 - reduces risk from 1-Persistent CSMA, where multiple transmitters are waiting
