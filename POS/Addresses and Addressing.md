@@ -35,8 +35,8 @@ aliases:
 	- electronic request form - mediated by ISP
 - originally addresses were allocated regardless of the geographical location
 - later established: 
-	- hierarchical addressing and
-	- allocation of network prefixes variable lengths (only what's needed, not wasting space like class IP addressing)
+	- hierarchical addressing
+	- and allocation of network prefixes variable lengths (only what's needed, not wasting space like class IP addressing)
 		- network prefixes can then be subnetted again
 - private networks may utilize address ranges reserved for private use
 	- has to avoid leaking such addresses to the Internet
@@ -44,9 +44,6 @@ aliases:
 	- 172.16.0.0/12 (172.16.\* - 172.31.\*),
 	- 192.168.0.0/16 - common for private networks connecting to the Internet through NAT (Netwok Address Translation)
 	- 169.254.0.0/16
-
-
-
 
 ## Classes of IP addreses
 - method for allocating addresses of the past, not being used anymore
@@ -85,9 +82,9 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 	- every segment is given a unique subnet address
 	- segments can potentially have different number of stations
 		- reserved addresses and router interfaces have to be taken into account
-- the part in the IP address originally allocated for hosts (specification of nodes, host part of the address) is further divided into:
-	- subnet ID and 
-	- host (node) ID
+- the part in the **IP address originally allocated for hosts** (specification of nodes, host part of the address) is further *divided* into:
+	- **subnet** ID
+	- and **host** (node) ID
 - the address (host part) may be split at any bit position according to the number of required network stations
 
 ![[subnet_mask.png.png]]
@@ -98,7 +95,12 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 - practical usage of subnetting:
 	- used for determing the maximum address prefix length to request from your ISP that will provide enough IP addresses to cover the required number of network segments, with sufficient addresses for the devices on each segment
 	- division of already given network prefix into a chosen number of segments
-	- used in WAN addressing plans
+	- used in WAN addressing plans - connects LANs together creating a mesh
+
+### Addressing Constant Subnet Mask
+- not used anymore, was replaced by VLSM (Variable Length Subnet Mask)
+- ![[constant_subnet_mask_1.png.png]]
+![[constant_subnet_mask_2.png.png]]
 
 
 # IPv6 Addressing
