@@ -92,7 +92,12 @@
 
 ### Gigabit+ Ethernet Improvements
 - 40G, 100G Ethernet
-	- SMF
+	- SMF, MMF, UTP Cat8
+- 200G - SMF
+- etc.
+- 1000Base-T1 
+	- using a single pair (indicated by the 1 in the name) Gigabit Ethernet
+	- used in automotive and industrial settings
 
 
 
