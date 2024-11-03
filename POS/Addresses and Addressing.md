@@ -45,7 +45,7 @@ aliases:
 	- 192.168.0.0/16 - common for private networks connecting to the Internet through NAT (Netwok Address Translation)
 	- 169.254.0.0/16
 
-## Classes of IP addreses
+## Classful IP addreses
 - method for allocating addresses of the past, not being used anymore
 	- with no regard for the future, wasting shit ton of unique addresses (fixed size network and host address parts)
 
@@ -72,7 +72,7 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 - this host - station pinging 0.0.0.0 is pinging itself
 - universal broadcast (255.255.255.255) - sends packet to all stations in the on same LAN (broadcast domain)
 - multicast - from 224.x.x.x to 239.x.x.x 
-	- remnants from class addressing, class D
+	- remnants from classful addressing, class D
 - reserved addresses (shall not be used on clients):
 	- network address of the local network (all 0s in the host part of the IP address)
 	- broadcast address of the local network (all 1s)
