@@ -82,6 +82,12 @@
 - connection-oriented service - logical connection between remote entities (through SAPs)
 - connectionless acknowledge service
 
+### Contents of the LLC Header
+- placed at the beginning of data part in MAC layer frame
+- DSAP and SSAP - Destination SAP (destination entity) and Source SAP (source entity)
+- some other shit fuaaaaaaaaawk
+
+
 
 
 
