@@ -78,7 +78,7 @@
 
 ### Services Provided by LLC Sub-Layer
 - connectionless unackknowledged service
-	- most common one, no flow control and r
+	- most common one, no flow control and error control
 - connection-oriented service - logical connection between remote entities (through SAPs)
 - connectionless acknowledge service
 
