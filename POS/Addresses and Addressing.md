@@ -39,6 +39,8 @@ aliases:
 - address space subdivided into 5 classes (A,B,C,D,E)
 	- each beginnig with a certain sequence of bits
 		- **A** (0), **B** (10), **C** (110), **D** (1110), **E** (1111)
+			- class D addresses are still operational 
+$$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 	- having network prefix following after this sequence
 
 
@@ -52,8 +54,18 @@ aliases:
 
 ![[ip_special_addresses.png.png]]
 
-- this host - 
+- this host - station pinging 0.0.0.0 is pinging itself
 - universal broadcast (255.255.255.255) - sends packet to all stations in the on same LAN (broadcast domain)
-- 
+- multicast - from 224.x.x.x to 239.x.x.x 
+	- remnants from class addressing, class D
+- network address and broadcast address on local network shall not be used on clients (all 0s or all 1s in the host part of the IP address)
+
+## Subnetting
+- allows dividing network prefix between mulitple LAN segments
+
+
+
+
+
 
 
