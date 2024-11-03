@@ -160,7 +160,14 @@ $$FEDC:A98:7654:1230::7546:3210$$
 			- usage of Fragmentation header
 	- optimized IP Option processing	
 	- support for jumbograms
-> 		In [packet-switched](https://en.wikipedia.org/wiki/Packet_switched "Packet switched") computer networks, a **jumbogram** ([portmanteau](https://en.wikipedia.org/wiki/Portmanteau "Portmanteau") of _[jumbo](https://en.wiktionary.org/wiki/jumbo "wikt:jumbo")_ and _[datagram](https://en.wikipedia.org/wiki/Datagram "Datagram")_) is an [internet-layer](https://en.wikipedia.org/wiki/Internet-layer "Internet-layer") packet exceeding the standard [maximum transmission unit](https://en.wikipedia.org/wiki/Maximum_transmission_unit "Maximum transmission unit") (MTU) of the underlying network technology. In contrast, large packets for _[link-layer](https://en.wikipedia.org/wiki/Link-layer "Link-layer")_ technologies are referred to as [jumbo frames](https://en.wikipedia.org/wiki/Jumbo_frame "Jumbo frame").
+	- no ARP - ICMPv6 is used instead
+		- neighbor discovery, router advertisements
+	- support for anycast is required
+		- ::0 all zeros in host portion of address is the anycast address of the router on a given subnet
+			- *note: in IPv6 last address can be used unlike in IPv4 (broadcast)*
+	- DNS extensions - AAAA and ipv6.arpa PTR record
+			
+> In [packet-switched](https://en.wikipedia.org/wiki/Packet_switched "Packet switched") computer networks, a **jumbogram** ([portmanteau](https://en.wikipedia.org/wiki/Portmanteau "Portmanteau") of _[jumbo](https://en.wiktionary.org/wiki/jumbo "wikt:jumbo")_ and _[datagram](https://en.wikipedia.org/wiki/Datagram "Datagram")_) is an [internet-layer](https://en.wikipedia.org/wiki/Internet-layer "Internet-layer") packet exceeding the standard [maximum transmission unit](https://en.wikipedia.org/wiki/Maximum_transmission_unit "Maximum transmission unit") (MTU) of the underlying network technology. In contrast, large packets for _[link-layer](https://en.wikipedia.org/wiki/Link-layer "Link-layer")_ technologies are referred to as [jumbo frames](https://en.wikipedia.org/wiki/Jumbo_frame "Jumbo frame").
 
 ## IPv6 Subnetting
 - hierarchical addressing scheme
