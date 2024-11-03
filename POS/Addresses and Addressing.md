@@ -30,7 +30,15 @@ aliases:
 	- node/host address part
 
 ## IP Addresses Allocation
-- allocated by 
+- allocated by the Regional Internet Registry (RIR)
+	- Europe's RIR is called RIPE (Réseaux IP Européens Network Coordination Centre)
+	- electronic request form - mediated by ISP
+- originally addresses were allocated regardless of the geographical location
+- later established: 
+	- hierarchical addressing and
+	- allocation of network prefixes variable lengths (only what's needed, not wasting space like class IP addressing)
+		- network prefixes can then be subnetted again
+- 
 
 
 
