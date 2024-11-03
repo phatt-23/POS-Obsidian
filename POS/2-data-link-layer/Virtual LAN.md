@@ -1,3 +1,8 @@
+---
+aliases:
+  - VLAN
+---
+
 - single physical switch can be divided into many logical switches (virtual switches)
 	- a virtual local area network can be constucted thanks to this property
 		- just by software configuration, no cabling changes needed
