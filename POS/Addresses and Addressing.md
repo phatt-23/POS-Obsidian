@@ -38,7 +38,7 @@ aliases:
 
 - address space subdivided into 5 classes (A,B,C,D,E)
 	- each beginnig with a certain sequence of bits
-		- A (0), B (10), C (110), D (1110), E (1111)
+		- **A** (0), **B** (10), **C** (110), **D** (1110), **E** (1111)
 	- having network prefix following after this sequence
 
 
@@ -48,9 +48,12 @@ aliases:
 	- standardized as Classless Inter-Domain Routing (CIDR)
 		- CIDR notation - slash behind an IP address (192.168.100.0/24)
 
+## Special IP Addresses
 
+![[ip_special_addresses.png.png]]
 
-
-
+- this host - 
+- universal broadcast (255.255.255.255) - sends packet to all stations in the on same LAN (broadcast domain)
+- 
 
 
