@@ -45,7 +45,8 @@
 	- ICMP (Internet Control Message Protocol), 
 	- IGMP (Internet Group Management Protocol)
 - examples for IPv6: 
-	- 
+	-  ICMPv6
+	- SLAAC
 
 ## ARP - Address Resolution Protocol
 - used for when we don't know to which interface we should send the IP packet so it will arrive to the destination
