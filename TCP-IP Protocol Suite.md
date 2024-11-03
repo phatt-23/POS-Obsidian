@@ -50,6 +50,22 @@
 - maps destination IP addresses to corresponding MAC addresses
 	- ARP Request with an IP address in question are broadcasted when a corresponding MAC address is needed (is not known)
 		- the learnt mappings of IP addreses and MAC addresses are put into ARP caches (table, similar to CAM tables in switches and routing)
-- 
+		- the station with the required IP address replies with its MAC address
+			- can only respond only if it's on the same segment
+				- stations on the same segment
+				- default gateway address
+		- the reqester caches this MAC address (on Linux you can check this ARP table with `arp -a` command)
+- works between L2 and L3
 
-
+# ICMP - Internet Control Message Protocol
+- control and information messages
+	- informs about non-standard events during packet transmission
+- carried in data part of the IP packet
+- messages:
+	- "Echo request", "Echo reply" - used by `ping` command
+	- "Destination unreachable"
+		- network, host, port, protocol unreachable
+	- "Time exceeded" 
+		- TTL (Time-To-Live) field reaches zero
+			- used by `traceroute` program
+		- reassembly timeout expired
