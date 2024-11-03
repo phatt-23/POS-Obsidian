@@ -102,12 +102,23 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 ![[wan_addressing.png.png|WAN Addressing Plan]]
 - constraints of subnetting
 	- minimum number of bits of the node is 2
-		- network address (first) and broadcast address (last)
-
+		- network address (first) and broadcast address (last) eat away 2 addresses
+			- today these can be used as hosts addresses normaly
+				- all 0s (also "Subnet Zero") - network address
+				- and all 1s (broadcast)
+					- in past it was recommended because directed broadcast was used, now routers typically don't forward broadcast frames out of the network
+		- interfaces connecting routers or stations also take away 2 addresses for themselves
+		
+### Variable Length Subnet Mask Addressing
+[example by Grygarek](http://www.cs.vsb.cz/grygarek/SPS/lect/VLSM/VLSM.html)
+[examples by VUT-FIT](https://netacad.fit.vutbr.cz/wp-content/uploads/ccna/itn/VLSM_Workbook__Student_Edition_-_v2_0.pdf)
+- VLSM box can a useful tool
 
 ### Addressing Constant Subnet Mask
 - not used anymore, was replaced by VLSM (Variable Length Subnet Mask)
-- ![[constant_subnet_mask_1.png.png]]
+- here are some examples (extra shit):
+![[constant_subnet_mask_1.png.png]]
+
 ![[constant_subnet_mask_2.png.png]]
 
 ![[constant_subnet_mask_3.png.png]]
