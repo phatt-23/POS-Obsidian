@@ -62,6 +62,15 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 
 ## Subnetting
 - allows dividing network prefix between mulitple LAN segments
+	- every segment is given a unique subnet address
+- the part in the IP address originally allocated for hosts (specification of nodes, host part of the address) is further divided into:
+	- subnet ID and 
+	- host (node) ID
+- the address (host part) may be split at any bit position according to the number of required network stations
+- subnet mask
+	- specifies how many bits of the subnetted address represent network + 
+
+
 
 
 
