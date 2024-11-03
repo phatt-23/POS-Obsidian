@@ -140,10 +140,30 @@ $$FEDC:A98:7654:1230::7546:3210$$
 	- routers adverise the local network address prefix
 	- station append their MAC addresses (with some adjustments)
 	- DHCPv6 (Dynamic Host Configuration Protocol) may be used for extra features
+
 - reserved IPv6 addresses:
-	- special address
-		- ::1/128 (loopback)
-		- ::/128 (unspecified)
+	- special address:
+		- $::1/128$ (loopback)
+		- $::/128$ (unspecified)
+	- discard-only address block:
+		- $100::/64$ (blackholes the traffic)
+	- test networks, documentation:
+		- $2001:2::/48$
+		- $2001:db8::/32$
+	- local addresses:
+		- $FE80::/10$ (linked-scoped unicast, i.e. link-local address)
+		- $FC00::/7$ (unique-local)
+
+- multicast addresses:
+	- reserved block $FF00::/8$
+	- 4th hexadecimal digit (lowest 4 bits of the 2nd byte) indicates the scope of the multicast
+		1. interface local
+		2. link local
+		3. IPv4 local
+		4. administrative domain
+		5. site
+		8. organization
+		e. global
 	
 
 ## IPv6 Header
