@@ -29,6 +29,13 @@ aliases:
 				- only storing addresses of individual networks
 	- node/host address part
 
+## IP Addresses Allocation
+- allocated by 
+
+
+
+
+
 ## Classes of IP addreses
 - method for allocating addresses of the past, not being used anymore
 	- with no regard for the future, wasting shit ton of unique addresses (fixed size network and host address parts)
