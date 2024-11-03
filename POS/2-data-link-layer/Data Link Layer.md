@@ -15,5 +15,5 @@
 	- flow control
 - is often split into two sub-layers:
 	- [[LLC Sub-Layer|Logical Link Control]] (LLC) - unifies handling of various network technologies used with different MAC
-	- [[MAC Sub-Layer|Media Access Control]] (MAC)
+	- [[MAC Sub-Layer|Media Access Control]] (MAC) - using [[Multiple Access Control and Protocols|MAC protocols]]
 - examples: LLC 802.2, PPP (Peer-To-Peer Protocol), Frame Relay

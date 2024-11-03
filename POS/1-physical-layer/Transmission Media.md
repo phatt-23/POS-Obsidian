@@ -1,16 +1,18 @@
 [prez1-2](https://lms.vsb.cz/pluginfile.php/2310316/course/section/2805839/media.pdf)
-### Types 
+# Types 
 - copper 
 	- coaxial, 
 	- twisted pair (shielded, unshielded)
 - optical
 - wireless
-#### Coaxial
+
+## Coaxial
 - usage options: 
 	- BaseBand (no modulation, units of 100m...1km)
 	- BroadBand (modulated signal, 1km...)
 - components: crimp connectors, T-connectors, terminators
-#### Twisted Pair
+
+## Twisted Pair
 - cheaper than coaxial
 - worse parameters than coaxial
 - 4 twisted pairs, the pairs are also twisted
@@ -56,7 +58,8 @@
 	- GigabitEthernet connection (1 Gbps, 1000Base-T and up) uses all 4 pairs
 	- FastEthernet connection (100 Mbps, 100Base-T) uses only 2 pairs
 	- 1000Base-T upwards require all four pairs while all below require only two
-#### Optical Fiber	
+	
+## Optical Fiber	
 [more info](https://www.thefoa.org/tech/ref/basic/fiber.html)
 - very high transfer rate (tens of Gbps, high bandwidth) and reachable distance
 - resilient against noise and eavesdroping (signal tapping)
@@ -76,7 +79,7 @@
 - names of connectors: ST, SC, FC, LC, MT-RJ and others [wiki](http://en.wikipedia.org/wiki/Optical_fiber_connector)
 
 
-## Structured Cabling
+# Structured Cabling
 [more info](https://community.fs.com/article/horizontal-cabling-vs-backbone-cabling.html)
 - today generic cabling is used, not bound to any specifications or ideology
 - integrates various services - telephony, LAN, alarm system
