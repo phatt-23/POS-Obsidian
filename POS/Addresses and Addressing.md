@@ -58,18 +58,28 @@ $$ 1110000_b = 128_D + 64_D + 32_D = 224_D $$
 - universal broadcast (255.255.255.255) - sends packet to all stations in the on same LAN (broadcast domain)
 - multicast - from 224.x.x.x to 239.x.x.x 
 	- remnants from class addressing, class D
-- network address and broadcast address on local network shall not be used on clients (all 0s or all 1s in the host part of the IP address)
+- reserved addresses (shall not be used on clients):
+	- network address of the local network (all 0s in the host part of the IP address)
+	- broadcast address of the local network (all 1s)
 
 ## Subnetting
 - allows dividing network prefix between mulitple LAN segments
 	- every segment is given a unique subnet address
+	- segments can potentially have different number of stations
+		- reserved addresses and router interfaces have to be taken into account
 - the part in the IP address originally allocated for hosts (specification of nodes, host part of the address) is further divided into:
 	- subnet ID and 
 	- host (node) ID
 - the address (host part) may be split at any bit position according to the number of required network stations
-- subnet mask
-	- specifies how many bits of the subnetted address represent network + 
 
+![[subnet_mask.png.png]]
+
+- subnet mask:
+	- specifies how many bits of the subnetted address represent the network address + the subnet address
+	- binary one at the particular indicates that the bit in IP address belongs to network + subnet address
+- practical usage:
+	- used for determing the maximum address prefix length to request from your ISP that will provide enough IP addresses to cover the required number of network segments, with sufficient addresses for the devices on each segment
+	- division of already given network prefix into 
 
 
 
