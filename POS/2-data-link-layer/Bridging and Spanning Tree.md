@@ -33,6 +33,21 @@
 	- source uses the discovered path in subseqeunt commucation
 
 # Spanning Tree Protocol	
+
+> (corny ass poem)
+> I think that I shall never see. 
+> A graph more lovely than a tree. 
+> A tree whose crucial property 
+> Is loop-free connectivity. 
+> A tree that must be sure to span. 
+> So packets can reach every LAN. 
+> First, the root must be selected. 
+> By ID, it is elected. 
+> Least cost paths from root are traced. 
+> In the tree, these paths are placed. 
+> A mesh is made by folks like me, 
+> Then bridges find a spanning tree.  — Radia Perlman
+
 - algorithm implemented on bridges and switches (IEEE 802.1d)
 - tree is continually spanned through the whole network topology
 	- construction of acyclic graph - tree
@@ -48,10 +63,11 @@
 		- link preference influenced by link speed - faster will be chosen
 	- reduntant ports are blocked
 - root port (RP), designated port (DP), blocked port (BP)
+
 ![[spanning_tree.png.png]]
 
 - operation in converged state:
-	- root generates BPDU message every 2 seconds
+	- root generates BPDU (Bridge Protocol Data Unit) message every 2 seconds
 		- travels down the tree
 	- every bridge check presence of BPDU on its root port
 	- ports are categorized
@@ -65,8 +81,6 @@
 		- disabled - administratively
 
 - reconvergence (in case of failure) may take up to 50 seconds
-
-
 
 
 

@@ -65,11 +65,14 @@
 	- defines services provided to upper layers irrespective of the LAN technology
 		- provides a common software interface
 		- abstracts away diffrences between individual LANs of the 802 project
-	- allows addressing of entities (stations, routers) within the same network scope of the network node
-		- 
+	- allows addressing of entities (stations, routers) within the same network node by associating each protocol with a unique SAP
+		- when a device receives a packet, the LLC uses the SAP to identify which upper-layer protocol should process it
+			- SAPs are addresses within LLC that identify network services or protocols available on a device (such as IP or IPX)
+			- this allows multiple protocols to coexist on the same physical network link by distinguishing data for each protocol through SAP identifiers
 	- optional error control and flow control
 
-
+### Implementations of LLC
+- unified frame format
 
 
 
