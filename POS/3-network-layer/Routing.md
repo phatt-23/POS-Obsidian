@@ -10,7 +10,7 @@
 		- staticly - manual
 		- dynamicaly - based on the informaton of the neighboring router
 - routes packets of a particular network protocol
-	- IPv4, IPv6, ...
+	- IPv4, IPv6, ...G
 - processes network headers of passing packets:
 	- decreases *TTL* (Time To Live) field
 		- protection against loops

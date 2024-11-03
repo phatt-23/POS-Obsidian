@@ -1,3 +1,9 @@
+---
+aliases:
+  - star topology
+  - bus topology
+---
+
 [prez1-3](https://lms.vsb.cz/pluginfile.php/2310316/course/section/2805839/LAN-WAN-topologies.pdf)
 ### Local Area Networks and Wide Area Networks
 
