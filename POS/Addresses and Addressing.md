@@ -29,6 +29,7 @@ aliases:
 				- only storing addresses of individual networks
 	- node/host address part
 
+![[ipv4_header.png.png|IPv4 header]]
 ## IP Addresses Allocation
 - allocated by the Regional Internet Registry (RIR)
 	- Europe's RIR is called RIPE (Réseaux IP Européens Network Coordination Centre)
@@ -139,6 +140,21 @@ $$FEDC:A98:7654:1230::7546:3210$$
 	- routers adverise the local network address prefix
 	- station append their MAC addresses (with some adjustments)
 	- DHCPv6 (Dynamic Host Configuration Protocol) may be used for extra features
+## IPv6 Header
+
+![[ipv6_headers.png.png]]
+
+- simplified in contrast to IPv4
+- works on the principle of header chaining
+	- header are gradually chained to form a linked list of headers
+		1. hop-by-hop options header
+		2. routing header
+		3. fragmentation header
+		4. encapsulating security payload
+		5. authentification header
+		6. destination options
+
+
 
 ## IPv6 Subnetting
 - hierarchical addressing scheme

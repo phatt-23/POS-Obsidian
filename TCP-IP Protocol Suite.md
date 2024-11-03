@@ -20,11 +20,11 @@
 	- doesn't care if the packet came, it's not its concern, its the concern of the upper layers
 - version 4 (IPv4) is still widely used, transition to version 6 (IPv6) is ongoing
 
-![[Pasted image 20241103184536.png|IPv4 header]]
 
 ## Packet Fragmentation
 - applied when the packet has to be routed over a link with insufficient maximum unit length (Maximum Transfer Unit, MTU)
 - either done by:
+![[ipv4_header.png.png|IPv4 header]]
 	- the source station 
 	- or any router - only with IPv4 packets, for IPv6 packets it is not permitted to do so, instead it sends a "Packet too big" ICMPv6 message back to the sender
 - the fragments are reassembled back into the packet at the destination
