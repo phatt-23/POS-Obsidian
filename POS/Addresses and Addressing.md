@@ -38,8 +38,12 @@ aliases:
 	- hierarchical addressing and
 	- allocation of network prefixes variable lengths (only what's needed, not wasting space like class IP addressing)
 		- network prefixes can then be subnetted again
-- 
-
+- private networks may utilize address ranges reserved for private use
+	- has to avoid leaking such addresses to the Internet
+	- 10.0.0.0/8, 
+	- 172.16.0.0/12 (172.16.\* - 172.31.\*),
+	- 192.168.0.0/16 - common for private networks connecting to the Internet through NAT (Netwok Address Translation)
+	- 169.254.0.0/16
 
 
 
